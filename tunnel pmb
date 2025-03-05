@@ -8,7 +8,7 @@
     }
 
     if (isset($_GET['cungkok'])) {
-        $filename = "file.txt";
+        $filename = "kw.txt";
         $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         $target_string = strtolower($_GET['cungkok']);
         foreach ($lines as $item) {
